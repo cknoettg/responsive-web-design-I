@@ -226,3 +226,36 @@ ul {
 li {
 	margin: 0 0 5px 0;
 }
+
+/* Added media queries */
+@media (max-height: 800px) {
+    .logo {
+        /* move logo to top of nav */
+    }
+
+    header img {
+        /* make image disappear */
+    }
+
+    header div {
+        /* center the header div */
+    }
+}
+
+@media (max-height: 500px) {
+    .logo {
+        /* move logo to top of nav */
+    }
+
+    header img {
+        /* make image disappear */
+    }
+
+    nav {
+        /* stack nav elements in a column instead of a row */
+    }
+
+    .section1, .section2 {
+        /* stack div's in a column instead of rows */
+    }
+}
