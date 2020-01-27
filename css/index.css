@@ -231,20 +231,21 @@ li {
 @media (max-width: 800px) {
     nav {
         /* move logo to top of nav */
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        
+        /* flex-direction: column; */
+        /* justify-content: center;
+        align-items: center; */
         /* troubleshooting border */
         /* border: 1px solid black; */
     }
 
     a {
-        flex-direction: row;
         /* troubleshooting border */
         /* border: 1px solid black; */
     }
 
     .logo {
+        display: block;
         width: 50%;
         text-align: center;
         /* troubleshooting border */
@@ -258,6 +259,18 @@ li {
 
     header div {
         /* center the header div */
+    }
+
+    .section1, .section2 {
+        width: 100%;
+        padding: 10% 0px;
+    }
+    .section2 div {
+        padding-right: 5%;
+    }
+
+    footer {
+        padding: 10% 0px;
     }
 }
 
