@@ -235,24 +235,25 @@ li {
         justify-content: center;
         align-items: center;
         /* troubleshooting border */
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     a {
         flex-direction: row;
         /* troubleshooting border */
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .logo {
         width: 50%;
         text-align: center;
         /* troubleshooting border */
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     header img {
         /* make image disappear */
+        display: none;
     }
 
     header div {
@@ -262,27 +263,46 @@ li {
 
 @media (max-width: 500px) {
     .logo {
-        /* move logo to top of nav */
+        padding: 5%;
     }
 
     header img {
         /* make image disappear */
+        display: none;
     }
 
     nav {
         /* stack nav elements in a column instead of a row */
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    nav:last-child {
+        display: flex;
+        order: 1;
+    }
+
     a {
-        width:50%;
+        display: block;
+        width: 100%;
+        padding: 5%;
         border: 1px solid lightgray;
         text-align: center;
     }
 
     .section1, .section2 {
         /* stack div's in a column instead of rows */
+        flex-direction: column;
+        padding: 10% 0px;
+    }
+
+    .section1 div, .section2 div {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    footer {
+        padding: 10% 0px;
     }
 }
