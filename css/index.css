@@ -228,9 +228,27 @@ li {
 }
 
 /* Added media queries */
-@media (max-height: 800px) {
-    .logo {
+@media (max-width: 800px) {
+    nav {
         /* move logo to top of nav */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        /* troubleshooting border */
+        border: 1px solid black;
+    }
+
+    a {
+        flex-direction: row;
+        /* troubleshooting border */
+        border: 1px solid black;
+    }
+
+    .logo {
+        width: 50%;
+        text-align: center;
+        /* troubleshooting border */
+        border: 1px solid black;
     }
 
     header img {
@@ -242,7 +260,7 @@ li {
     }
 }
 
-@media (max-height: 500px) {
+@media (max-width: 500px) {
     .logo {
         /* move logo to top of nav */
     }
@@ -253,6 +271,15 @@ li {
 
     nav {
         /* stack nav elements in a column instead of a row */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        width:50%;
+        border: 1px solid lightgray;
+        text-align: center;
     }
 
     .section1, .section2 {
