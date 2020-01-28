@@ -229,36 +229,14 @@ li {
 
 /* Added media queries */
 @media (max-width: 800px) {
-    nav {
-        /* move logo to top of nav */
-        
-        /* flex-direction: column; */
-        /* justify-content: center;
-        align-items: center; */
-        /* troubleshooting border */
-        /* border: 1px solid black; */
-    }
-
-    a {
-        /* troubleshooting border */
-        /* border: 1px solid black; */
-    }
-
-    .logo {
-        display: block;
-        width: 50%;
-        text-align: center;
-        /* troubleshooting border */
-        /* border: 1px solid black; */
+    /* move ing to top of stack */
+    nav img:nth-last-child(1) {
+        order: -1;
     }
 
     header img {
         /* make image disappear */
         display: none;
-    }
-
-    header div {
-        /* center the header div */
     }
 
     .section1, .section2 {
@@ -291,9 +269,9 @@ li {
         align-items: center;
     }
 
-    nav:last-child {
-        display: flex;
-        order: 1;
+    nav img:nth-last-child(1) {
+        /* move img to top of stack */
+        order: -1;
     }
 
     a {
