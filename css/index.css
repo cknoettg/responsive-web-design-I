@@ -93,6 +93,13 @@ header {
 	justify-content: space-evenly;
 }
 
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
 header div {
 	display: flex;
 	flex-direction: column;
@@ -230,8 +237,16 @@ li {
 /* Added media queries */
 @media (max-width: 800px) {
     /* move ing to top of stack */
-    nav img:nth-last-child(1) {
-        order: -1;
+    nav {
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav img {
+        display: flex;
+        width: 50%;
+        padding-bottom: 5%;
     }
 
     header img {
@@ -264,14 +279,14 @@ li {
 
     nav {
         /* stack nav elements in a column instead of a row */
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
-    nav img:nth-last-child(1) {
-        /* move img to top of stack */
-        order: -1;
+    .links {
+        display:flex;
+        flex-direction: column;
     }
 
     a {
