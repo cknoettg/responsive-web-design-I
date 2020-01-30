@@ -235,39 +235,7 @@ li {
 }
 
 /* Added media queries */
-@media (max-width: 800px) {
-    /* move ing to top of stack */
-    nav {
-        flex-direction:column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav img {
-        display: flex;
-        width: 50%;
-        padding-bottom: 5%;
-    }
-
-    header img {
-        /* make image disappear */
-        display: none;
-    }
-
-    .section1, .section2 {
-        width: 100%;
-        padding: 10% 0px;
-    }
-    .section2 div {
-        padding-right: 5%;
-    }
-
-    footer {
-        padding: 10% 0px;
-    }
-}
-
-@media (max-width: 500px) {
+@media (min-width: 500px) {
     .logo {
         padding: 5%;
     }
@@ -312,3 +280,36 @@ li {
         padding: 10% 0px;
     }
 }
+@media (min-width: 800px) {
+    /* move ing to top of stack */
+    nav {
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav img {
+        display: flex;
+        width: 50%;
+        padding-bottom: 5%;
+    }
+
+    header img {
+        /* make image disappear */
+        display: none;
+    }
+
+    .section1, .section2 {
+        width: 100%;
+        padding: 10% 0px;
+    }
+    .section2 div {
+        padding-right: 5%;
+    }
+
+    footer {
+        padding: 10% 0px;
+    }
+}
+
+
